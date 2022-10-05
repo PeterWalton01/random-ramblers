@@ -16,10 +16,9 @@ body {
 .main-container {
   width: 100%;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
-#logo {
+.logo {
   font-family: logoFont;
   font-size: 2rem;
   color: #5d688d;
@@ -61,18 +60,18 @@ header ul li a:focus {
   background-color: silver;
 }
 
-#banner {
+.banner {
   padding-left: 0rem;
 }
 
-div#banner {
+div.banner {
   background-image: url(../img/BannerImage.jpg);
   height: 30.25rem;
   width: 100%;
   padding-right: 0rem;
 }
 
-#quoteContainer {
+.quoteContainer {
   position: absolute;
   top: 6rem;
   width: 100%;
@@ -81,14 +80,14 @@ div#banner {
   opacity: 0.5;
 }
 
-#quote1 {
+.quote1 {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-#quote2 {
+.quote2 {
   margin-top: 2.5rem;
   width: 80%;
   margin-left: auto;
@@ -97,7 +96,7 @@ div#banner {
   font-size: 3rem;
 }
 
-#quote3 {
+.quote3 {
   margin-top: 4rem;
   width: 60%;
   margin-left: auto;
@@ -116,7 +115,7 @@ div#banner {
   width: 100%;
 }
 
-#pictureContainer {
+pictureContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -136,7 +135,7 @@ div#banner {
   text-align: center;
 }
 
-#midBand {
+.midBand {
   font-size: 2.5rem;
   width: 80%;
   margin-top: 1rem;
@@ -148,19 +147,14 @@ div#banner {
   text-align: center;
 }
 
-#finalPicture760 {
-  display: none;
-  width: 100%;
-}
-
-#finally img {
+.finally img {
   display: block;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#finalText {
+.finalText {
   width: 70%;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -176,7 +170,7 @@ footer {
   border: 0.0625rem solid rgba(52, 5, 5, 0.9);
 }
 
-#footerContent {
+.footerContent {
   display: flex;
   color: black;
   background-color: #545025;
@@ -187,49 +181,49 @@ footer {
   align-items: center;
 }
 
-#footerContent #email {
+.footerContent .email {
   margin-left: 1.5rem;
 }
 
-#footerContent #phone {
+.footerContent .phone {
   margin-right: 1.5rem;
 }
 
 @media screen and (max-width: 1500px) {
-  #quote1 {
+  .quote1 {
     font-size: 1.2rem;
   }
 
-  #quote2 {
+  .quote2 {
     margin-top: 2.5rem;
     font-size: 1.8rem;
   }
 
-  #finalText {
+  .finalText {
     font-size: 1.8rem;
     width: 28rem;
     margin-left: auto;
     margin-right: auto;
   }
 
-  div#banner {
+  div.banner {
     height: 28.44rem;
   }
 }
 
 @media screen and (max-width: 780px) {
-  #logo {
+  .logo {
     font-size: 1.2rem;
   }
 
   header ul li a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-right: 1.5rem;
   }
 }
 
 @media screen and (max-width: 650px) {
-  #logo {
+  .logo {
     font-size: 1.2rem;
   }
 
@@ -238,31 +232,31 @@ footer {
   }
 
   header ul li a {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-right: 0.5rem;
   }
 
-  #quote1 {
+  .quote1 {
     font-size: 1rem;
     margin-top: 1rem;
   }
 
-  #quote2 {
+  .quote2 {
     margin-top: 2.3rem;
     font-size: 1.5rem;
   }
 
-  #quote3 {
+  .quote3 {
     margin-top: 2.5rem;
     font-size: 1.5rem;
     margin-bottom: -2rem;
   }
 
-  #midBand {
+  .midBand {
     font-size: 1.5rem;
   }
 
-  #footerContent {
+  .footerContent {
     display: flex;
     color: black;
     background-color: #545025;
@@ -273,7 +267,7 @@ footer {
     align-items: center;
   }
 
-  div#banner {
+  div.banner {
     height: 25rem;
   }
 }
@@ -283,14 +277,14 @@ footer {
     display: block;
   }
 
-  #logo {
+  .logo {
     display: inline-block;
     padding-left: 0;
     width: 100%;
     text-align: center;
   }
 
-  #menu {
+  .menu {
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -304,21 +298,21 @@ footer {
     font-size: 0.8rem;
   }
 
-  #logo {
+  .logo {
     margin: 0.95rem auto;
   }
 
-  #quote2 {
+  .quote2 {
     font-size: 1.2rem;
     margin-top: 3.4rem;
   }
 
-  #quote1 {
+  .quote1 {
     margin-top: 3rem;
     font-size: 0.9rem;
   }
 
-  #quote3 {
+  .quote3 {
     font-size: 1.1rem;
   }
 
@@ -327,25 +321,25 @@ footer {
     font-size: 1.1rem;
   }
 
-  #midBand,
-  #finalText {
+  .midBand,
+  .finalText {
     width: 18rem;
     font-size: 1.1rem;
   }
 
-  #midBand {
+  .midBand {
     margin-bottom: -2.5rem;
   }
 
-  #footerContent {
+  .footerContent {
     font-size: 0.8rem;
   }
 
-  #footerContent #email {
+  .footerContent .email {
     margin-left: 0.8rem;
   }
 
-  #footerContent #phone {
+  .footerContent .phone {
     margin-right: 0.8rem;
   }
 
