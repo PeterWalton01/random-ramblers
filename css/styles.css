@@ -1,0 +1,359 @@
+@font-face {
+  font-family: logoFont;
+  src: url("../fonts/Tapestry-Regular.ttf");
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #8e8741;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+  margin-right: 0rem;
+}
+
+#logo {
+  font-family: logoFont;
+  font-size: 2rem;
+  color: #5d688d;
+  padding-left: 1.5rem;
+}
+
+header {
+  display: flex;
+  background-color: hsl(47, 36%, 65%);
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0rem;
+  width: 100%;
+  border: 1pt solid black;
+  left: 0rem;
+  z-index: 5;
+}
+
+header ul {
+  list-style: none;
+}
+
+header li {
+  display: inline;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding-right: 2rem;
+  color: #555;
+}
+
+header ul li a:hover,
+header ul li a:focus {
+  color: black;
+  font-weight: #666;
+  background-color: silver;
+}
+
+#banner {
+  padding-left: 0rem;
+}
+
+div#banner {
+  background-image: url(../img/BannerImage.jpg);
+  background-size: cover;
+  height: 30.25rem;
+  width: 100%;
+  padding-right: 0rem;
+}
+
+#quoteContainer {
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#quote1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#quote2 {
+  margin-top: 2.5rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#quote3 {
+  margin-top: 4rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 3rem;
+  color: greenyellow;
+}
+
+.picturesContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.5rem;
+  flex-wrap: wrap;
+  padding-right: 0rem;
+}
+
+#pictureContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture img {
+  width: 31.25rem;
+}
+
+.description {
+  width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: aqua;
+  text-align: center;
+}
+
+#midBand {
+  font-size: 2.5rem;
+  width: 80%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  color: greenyellow;
+  text-align: center;
+}
+
+#finally {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 0.6rem;
+}
+
+#finalPicture {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#finalPicture760 {
+  display: none;
+}
+
+#finalText {
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.4rem;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  color: aqua;
+  text-align: center;
+  color: greenyellow;
+}
+
+footer {
+  width: 100%;
+  border: 0.0625rem solid rgba(52, 5, 5, 0.9);
+}
+
+#footerContent {
+  display: flex;
+  color: black;
+  background-color: #545025;
+  font-size: 1.5rem;
+  height: 5rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footerContent #email {
+  margin-left: 1.5rem;
+}
+
+#footerContent #phone {
+  margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 1500px) {
+  #quote1 {
+    font-size: 1.2rem;
+  }
+
+  #quote2 {
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+  }
+
+  #finalText {
+    font-size: 1.8rem;
+    width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div#banner {
+    height: 28.44rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #logo {
+    font-size: 1.2rem;
+  }
+
+  header ul li a {
+    font-size: 1rem;
+    padding-right: 1.5rem;
+  }
+
+  #finalPicture {
+    display: none;
+  }
+
+  #finalPicture760 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #logo {
+    font-size: 1.2rem;
+  }
+
+  header li {
+    margin-right: 1rem;
+  }
+
+  header ul li a {
+    font-size: 0.8rem;
+    padding-right: 0.5rem;
+  }
+
+  #quote1 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  #quote2 {
+    margin-top: 2.3rem;
+    font-size: 1.5rem;
+  }
+
+  #quote3 {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    margin-bottom: -2rem;
+  }
+
+  #midBand {
+    font-size: 1.5rem;
+  }
+
+  #footerContent {
+    display: flex;
+    color: black;
+    background-color: #545025;
+    font-size: 1rem;
+    height: 3rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div#banner {
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  header {
+    display: block;
+  }
+
+  #logo {
+    display: inline-block;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: hsl(47, 36%, 75%);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  header ul li a {
+    font-size: 0.8rem;
+  }
+
+  #logo {
+    margin: 0.95rem auto;
+  }
+
+  #quote2 {
+    font-size: 1.2rem;
+    margin-top: 3.4rem;
+  }
+
+  #quote1 {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+
+  #quote3 {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    width: 18rem;
+    font-size: 1.1rem;
+  }
+
+  #midBand,
+  #finalText {
+    width: 18rem;
+    font-size: 1.1rem;
+  }
+
+  #midBand {
+    margin-bottom: -2.5rem;
+  }
+
+  #footerContent {
+    font-size: 0.8rem;
+  }
+
+  #footerContent #email {
+    margin-left: 0.8rem;
+  }
+
+  #footerContent #phone {
+    margin-right: 0.8rem;
+  }
+}
