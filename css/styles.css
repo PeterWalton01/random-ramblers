@@ -13,6 +13,11 @@ body {
   margin-bottom: 0rem;
   margin-right: 0rem;
 }
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid red;
+}
 
 #logo {
   font-family: logoFont;
@@ -62,7 +67,6 @@ header ul li a:focus {
 
 div#banner {
   background-image: url(../img/BannerImage.jpg);
-  background-size: cover;
   height: 30.25rem;
   width: 100%;
   padding-right: 0rem;
@@ -109,15 +113,17 @@ div#banner {
   margin-top: 4.5rem;
   flex-wrap: wrap;
   padding-right: 0rem;
+  width: 100%;
 }
 
 #pictureContainer {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .picture img {
-  width: 31.25rem;
+  width: 100%;
 }
 
 .description {
@@ -134,37 +140,33 @@ div#banner {
   font-size: 2.5rem;
   width: 80%;
   margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
   margin-bottom: 2rem;
   color: greenyellow;
   text-align: center;
 }
 
-#finally {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 0.6rem;
-}
-
-#finalPicture {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #finalPicture760 {
   display: none;
+  width: 100%;
+}
+
+#finally img {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #finalText {
-  width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 70%;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-bottom: 1.4rem;
   margin-top: 1rem;
   font-size: 2.5rem;
-  color: aqua;
   text-align: center;
   color: greenyellow;
 }
@@ -223,16 +225,6 @@ footer {
   header ul li a {
     font-size: 1rem;
     padding-right: 1.5rem;
-  }
-
-  #finalPicture {
-    display: none;
-  }
-
-  #finalPicture760 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -355,5 +347,9 @@ footer {
 
   #footerContent #phone {
     margin-right: 0.8rem;
+  }
+
+  .nowrap {
+    white-space: nowrap;
   }
 }
